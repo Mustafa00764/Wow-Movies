@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_grap"
+    app:startDestination="@id/homeFragmentMyMovie">
+
+    <fragment
+        android:id="@+id/myFragment2"
+        android:name="com.example.wowmovie_.ui.fragment.MyFragment"
+        android:label="fragment_my"
+        tools:layout="@layout/fragment_my" >
+        <action
+            android:id="@+id/action_myFragment2_to_moviesFragmentSave"
+            app:destination="@id/moviesFragmentSave" />
+    </fragment>
+    <fragment
+        android:id="@+id/loadingFragment"
+        android:name="com.example.wowmovie_.ui.fragment.LoadingFragment"
+        android:label="fragment_loading"
+        tools:layout="@layout/fragment_loading" >
+        <action
+            android:id="@+id/action_loadingFragment_to_moviesFragment7"
+            app:destination="@id/moviesFragment7" />
+    </fragment>
+    <fragment
+        android:id="@+id/userHomeFragment2"
+        android:name="com.example.wowmovie_.ui.fragment.UserHomeFragment"
+        android:label="fragment_user_home"
+        tools:layout="@layout/fragment_user_home" />
+    <fragment
+        android:id="@+id/homeFragmentMyMovie"
+        android:name="com.example.wowmovie_.ui.fragment.home.HomeFragmentMyMovie"
+        android:label="fragment_home_my_movie"
+        tools:layout="@layout/fragment_home_my_movie" >
+        <action
+            android:id="@+id/action_homeFragmentMyMovie_to_moviesFragment"
+            app:destination="@id/moviesFragment" />
+        <action
+            android:id="@+id/action_homeFragmentMyMovie_to_popularMoviesFragment"
+            app:destination="@id/popularMoviesFragment" />
+        <action
+            android:id="@+id/action_homeFragmentMyMovie_to_upcomingMoviesFragment"
+            app:destination="@id/upcomingMoviesFragment" />
+        <action
+            android:id="@+id/action_homeFragmentMyMovie_to_topMoviesFragment"
+            app:destination="@id/topMoviesFragment" />
+        <action
+            android:id="@+id/action_homeFragmentMyMovie_to_nowMoviesFragment"
+            app:destination="@id/nowMoviesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/moviesFragment"
+        android:name="com.example.wowmovie_.ui.fragment.MoviesFragment"
+        android:label="fragment_movies"
+        tools:layout="@layout/fragment_movies" >
+        <action
+            android:id="@+id/action_moviesFragment_to_homeFragmentMyMovie"
+            app:destination="@id/homeFragmentMyMovie" />
+        <argument
+            android:name="movieId"
+            app:argType="string"
+            android:defaultValue='"1"' />
+        <action
+            android:id="@+id/action_moviesFragment_to_popularMoviesFragment"
+            app:destination="@id/popularMoviesFragment" />
+        <action
+            android:id="@+id/action_moviesFragment_self"
+            app:destination="@id/moviesFragment" />
+        <action
+            android:id="@+id/action_moviesFragment_to_popularMoviesFragment2"
+            app:destination="@id/popularMoviesFragment" />
+        <action
+            android:id="@+id/action_moviesFragment_to_nowMoviesFragment"
+            app:destination="@id/nowMoviesFragment" />
+        <action
+            android:id="@+id/action_moviesFragment_to_topMoviesFragment"
+            app:destination="@id/topMoviesFragment" />
+        <action
+            android:id="@+id/action_moviesFragment_to_myFragment2"
+            app:destination="@id/myFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/popularMoviesFragment"
+        android:name="com.example.wowmovie_.ui.fragment.PopularMoviesFragment"
+        android:label="fragment_popular_movies"
+        tools:layout="@layout/fragment_popular_movies" >
+        <action
+            android:id="@+id/action_popularMoviesFragment_to_moviesFragment"
+            app:destination="@id/moviesFragment" />
+        <action
+            android:id="@+id/action_popularMoviesFragment_to_moviesFragment33"
+            app:destination="@id/moviesFragment33" />
+        <action
+            android:id="@+id/action_popularMoviesFragment_to_moviesFragment55"
+            app:destination="@id/moviesFragment55" />
+        <action
+            android:id="@+id/action_popularMoviesFragment_to_homeFragmentMyMovie"
+            app:destination="@id/homeFragmentMyMovie" />
+    </fragment>
+    <fragment
+        android:id="@+id/nowMoviesFragment"
+        android:name="com.example.wowmovie_.ui.fragment.NowMoviesFragment"
+        android:label="NowMoviesFragment" >
+        <action
+            android:id="@+id/action_nowMoviesFragment_to_homeFragmentMyMovie"
+            app:destination="@id/homeFragmentMyMovie" />
+        <action
+            android:id="@+id/action_nowMoviesFragment_to_moviesFragment"
+            app:destination="@id/moviesFragment" />
+        <action
+            android:id="@+id/action_nowMoviesFragment_to_moviesFragment44"
+            app:destination="@id/moviesFragment44" />
+        <action
+            android:id="@+id/action_nowMoviesFragment_to_homeFragmentMyMovie2"
+            app:destination="@id/homeFragmentMyMovie" />
+    </fragment>
+    <fragment
+        android:id="@+id/upcomingMoviesFragment"
+        android:name="com.example.wowmovie_.ui.fragment.UpcomingMoviesFragment"
+        android:label="UpcomingMoviesFragment" >
+        <action
+            android:id="@+id/action_upcomingMoviesFragment_to_moviesFragment"
+            app:destination="@id/moviesFragment" />
+        <action
+            android:id="@+id/action_upcomingMoviesFragment_to_moviesFragment33"
+            app:destination="@id/moviesFragment33" />
+        <action
+            android:id="@+id/action_upcomingMoviesFragment_to_moviesFragment333"
+            app:destination="@id/moviesFragment33" />
+        <action
+            android:id="@+id/action_upcomingMoviesFragment_to_moviesFragment334"
+            app:destination="@id/moviesFragment33" />
+        <action
+            android:id="@+id/action_upcomingMoviesFragment_to_homeFragmentMyMovie"
+            app:destination="@id/homeFragmentMyMovie" />
+    </fragment>
+    <fragment
+        android:id="@+id/topMoviesFragment"
+        android:name="com.example.wowmovie_.ui.fragment.TopMoviesFragment"
+        android:label="TopMoviesFragment" >
+        <action
+            android:id="@+id/action_topMoviesFragment_to_homeFragmentMyMovie"
+            app:destination="@id/homeFragmentMyMovie" />
+        <action
+            android:id="@+id/action_topMoviesFragment_to_moviesFragment"
+            app:destination="@id/moviesFragment" />
+        <action
+            android:id="@+id/action_topMoviesFragment_to_moviesFragment66"
+            app:destination="@id/moviesFragment66" />
+        <action
+            android:id="@+id/action_topMoviesFragment_to_homeFragmentMyMovie2"
+            app:destination="@id/homeFragmentMyMovie" />
+        <action
+            android:id="@+id/action_topMoviesFragment_to_homeFragmentMyMovie3"
+            app:destination="@id/homeFragmentMyMovie" />
+    </fragment>
+    <fragment
+        android:id="@+id/moviesFragment33"
+        android:name="com.example.wowmovie_.ui.fragment.MoviesFragment33"
+        android:label="MoviesFragment33" >
+        <argument
+            android:name="moviesId"
+            app:argType="string"
+            android:defaultValue='"1"' />
+        <action
+            android:id="@+id/action_moviesFragment33_self"
+            app:destination="@id/moviesFragment33" />
+        <action
+            android:id="@+id/action_moviesFragment33_to_upcomingMoviesFragment"
+            app:destination="@id/upcomingMoviesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/moviesFragment44"
+        android:name="com.example.wowmovie_.ui.fragment.MoviesFragment44"
+        android:label="MoviesFragment44" >
+        <argument
+            android:name="movie2Id"
+            app:argType="string"
+            android:defaultValue='"1"' />
+        <action
+            android:id="@+id/action_moviesFragment44_self"
+            app:destination="@id/moviesFragment44" />
+        <action
+            android:id="@+id/action_moviesFragment44_to_nowMoviesFragment"
+            app:destination="@id/nowMoviesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/moviesFragment55"
+        android:name="com.example.wowmovie_.ui.fragment.MoviesFragment55"
+        android:label="MoviesFragment55" >
+        <argument
+            android:name="movie3Id"
+            app:argType="string"
+            android:defaultValue='"1"' />
+        <action
+            android:id="@+id/action_moviesFragment55_self"
+            app:destination="@id/moviesFragment55" />
+        <action
+            android:id="@+id/action_moviesFragment55_to_popularMoviesFragment"
+            app:destination="@id/popularMoviesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/moviesFragment66"
+        android:name="com.example.wowmovie_.ui.fragment.MoviesFragment66"
+        android:label="MoviesFragment66" >
+        <action
+            android:id="@+id/action_moviesFragment66_to_topMoviesFragment"
+            app:destination="@id/topMoviesFragment" />
+        <argument
+            android:name="topmovieId"
+            app:argType="string"
+            android:defaultValue='"1"' />
+        <action
+            android:id="@+id/action_moviesFragment66_self"
+            app:destination="@id/moviesFragment66" />
+    </fragment>
+    <fragment
+        android:id="@+id/moviesFragment7"
+        android:name="com.example.wowmovie_.ui.fragment.MoviesFragment7"
+        android:label="MoviesFragment7" >
+        <action
+            android:id="@+id/action_moviesFragment7_to_loadingFragment"
+            app:destination="@id/loadingFragment" />
+        <argument
+            android:name="searchmovieId"
+            app:argType="string"
+            android:defaultValue='"1"' />
+        <action
+            android:id="@+id/action_moviesFragment7_self2"
+            app:destination="@id/moviesFragment7" />
+    </fragment>
+    <fragment
+        android:id="@+id/moviesFragmentSave"
+        android:name="com.example.wowmovie_.ui.fragment.MoviesFragmentSave"
+        android:label="MoviesFragmentSave" >
+        <action
+            android:id="@+id/action_moviesFragmentSave_self"
+            app:destination="@id/moviesFragmentSave" />
+        <action
+            android:id="@+id/action_moviesFragmentSave_to_myFragment2"
+            app:destination="@id/myFragment2" />
+        <argument
+            android:name="moviesSaveId"
+            app:argType="integer"
+            android:defaultValue="1" />
+    </fragment>
+</navigation>

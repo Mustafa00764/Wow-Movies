@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/homeFragmentMyMovie"
+        android:icon="@drawable/ic_home"
+        android:title="Главное" />
+
+
+
+    <item
+        android:id="@+id/myFragment2"
+        android:icon="@drawable/ic_my"
+        android:title="Моё" />
+
+    <item
+        android:id="@+id/loadingFragment"
+        android:icon="@drawable/ic_loading"
+        android:title="Поиск" />
+
+
+</menu>
